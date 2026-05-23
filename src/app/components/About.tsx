@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import portrait from "../../img/IMG_8942.jpg";
 
 const services = [
   "Direction artistique",
@@ -48,7 +49,7 @@ export const About = () => {
             >
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden flex-shrink-0 border border-neutral-800">
                 <ImageWithFallback
-                  src="/src/img/IMG_8942.jpg"
+                  src={portrait}
                   alt="Portrait"
                   className="w-full h-full object-cover"
                 />
