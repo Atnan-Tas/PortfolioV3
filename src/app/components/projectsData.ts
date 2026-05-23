@@ -8,6 +8,22 @@ import photo5 from "../../img/DSC00352.jpg";
 import photo6 from "../../img/DSC00268.jpg";
 import photo7 from "../../img/DSC01302.jpg";
 
+// Nouveaux imports pour les autres projets
+import project1 from "../../img/project1.jpg";
+import project2 from "../../img/project2.jpg";
+import project3 from "../../img/project3.jpg";
+import project4 from "../../img/project4.jpg";
+import project5 from "../../img/project5.jpg";
+import project6 from "../../img/project6.jpg";
+import accueilCoohop from "../../img/accueil.png";
+import logoCoohop from "../../img/coohop.png";
+import jpoTeaser from "../../img/jpo.jpg";
+import upbfcMain from "../../img/img_upbfc.jpg";
+import upbfcCarte from "../../img/carte.jpg";
+import upbfcApp from "../../img/application.jpg";
+import maitriseProject from "../../img/project6.jpg";
+import mockup3D from "../../img/mockup2.png";
+
 export interface Project {
   id: number;
   slug: string;
@@ -22,8 +38,6 @@ export interface Project {
   gallery: string[];
   liveUrl?: string;
 }
-
-const ATNAN = "https://portfolio.atnantas.fr";
 
 const sportPhotos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7];
 
@@ -40,12 +54,8 @@ export const projects: Project[] = [
       "Série d'affiches éditoriales dédiées aux grandes figures du sport.",
     context:
       "Une série d'affiches pensées comme des couvertures de magazine sportif : composition dynamique, traitement typographique fort et palette saturée pour traduire l'intensité du jeu et l'aura de chaque athlète. La série rassemble Neymar Jr., Lebron James, et d'autres explorations autour de la culture sport.",
-    image: `${ATNAN}/project1.jpg`,
-    gallery: [
-      `${ATNAN}/project1.jpg`,
-      `${ATNAN}/project2.jpg`,
-      frame573,
-    ],
+    image: project1,
+    gallery: [project1, project2, frame573],
   },
   {
     id: 2,
@@ -59,12 +69,8 @@ export const projects: Project[] = [
       "Plateforme pour trouver des partenaires sportifs aux alentours.",
     context:
       "CooHop! met en relation des sportifs en recherche de partenaires d'entraînement à proximité. Le site mise sur une interface claire, des cartes géolocalisées et un parcours d'inscription rapide pour convertir l'intention en première mise en relation.",
-    image: `${ATNAN}/project3.jpg`,
-    gallery: [
-      `${ATNAN}/project3.jpg`,
-      `${ATNAN}/mockup2.png`,
-      `${ATNAN}/project5.jpg`,
-    ],
+    image: project3,
+    gallery: [accueilCoohop, logoCoohop, mockup3D],
     liveUrl: "https://portfolio.atnantas.fr/projects",
   },
   {
@@ -79,12 +85,8 @@ export const projects: Project[] = [
       "Teaser des Journées Portes Ouvertes du Conservatoire de Belfort.",
     context:
       "Un teaser court et rythmé pour annoncer les Journées Portes Ouvertes du Conservatoire Henri Dutilleux. Pensé comme une invitation sensorielle, mêlant captations musicales, instruments et instants de vie de l'établissement.",
-    image: `${ATNAN}/project4.jpg`,
-    gallery: [
-      `${ATNAN}/project4.jpg`,
-      `${ATNAN}/project6.jpg`,
-      `${ATNAN}/project5.jpg`,
-    ],
+    image: project4,
+    gallery: [jpoTeaser, maitriseProject, upbfcMain],
   },
   {
     id: 4,
@@ -97,12 +99,8 @@ export const projects: Project[] = [
     description: "Campagne de communication 360° pour l'Université Pasteur.",
     context:
       "Conception d'une campagne complète déclinée sur l'ensemble des supports — print, digital, signalétique, réseaux sociaux. Un système graphique cohérent pour porter la voix de l'université auprès des étudiants, partenaires et grand public.",
-    image: `${ATNAN}/project5.jpg`,
-    gallery: [
-      `${ATNAN}/project5.jpg`,
-      `${ATNAN}/project3.jpg`,
-      `${ATNAN}/mockup2.png`,
-    ],
+    image: project5,
+    gallery: [upbfcMain, upbfcCarte, upbfcApp],
   },
   {
     id: 5,
@@ -116,12 +114,8 @@ export const projects: Project[] = [
       "Capsule audiovisuelle dédiée à La Maîtrise du Conservatoire.",
     context:
       "Un film court mettant en lumière le travail de La Maîtrise : ensemble vocal jeune du Conservatoire. Captations en répétition et en représentation, étalonnage chaud et mise en récit sensible du quotidien des choristes.",
-    image: `${ATNAN}/project6.jpg`,
-    gallery: [
-      `${ATNAN}/project6.jpg`,
-      `${ATNAN}/project4.jpg`,
-      `${ATNAN}/project5.jpg`,
-    ],
+    image: project6,
+    gallery: [maitriseProject, jpoTeaser, upbfcMain],
   },
   {
     id: 6,
@@ -134,12 +128,8 @@ export const projects: Project[] = [
     description: "Exploration personnelle de modélisation et d'animation 3D.",
     context:
       "Un terrain de jeu pour explorer formes, matières et lumière en 3D. Modélisations, mises en scène et courtes animations qui nourrissent en retour mon travail graphique et mes propositions de direction artistique.",
-    image: `${ATNAN}/mockup2.png`,
-    gallery: [
-      `${ATNAN}/mockup2.png`,
-      `${ATNAN}/project1.jpg`,
-      `${ATNAN}/project2.jpg`,
-    ],
+    image: mockup3D,
+    gallery: [mockup3D, project1, project2],
   },
   {
     id: 7,
