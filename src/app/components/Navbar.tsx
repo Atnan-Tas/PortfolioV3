@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
+import logoLight from "../../img/logo_atnan_light.svg";
 
 const links = [
   { label: "Travaux", href: "#work" },
@@ -45,10 +46,15 @@ export const Navbar = ({ onNavigate }: NavbarProps) => {
         <a
           href="#top"
           onClick={(e) => handleClick(e, "#top")}
-          className="text-xl font-bold tracking-tighter uppercase pointer-events-auto"
+          className="text-xl font-bold tracking-tighter uppercase pointer-events-auto flex items-center gap-3"
           data-cursor-sticky
         >
-          Atnan.Studio
+          <img 
+            src={logoLight} 
+            alt="Logo Atnan Tas" 
+            className="h-5 w-auto" 
+          />
+          Atnan Tas
         </a>
         <div className="hidden md:flex gap-10 text-xs font-bold uppercase tracking-widest pointer-events-auto">
           {links.map((l) => (
