@@ -24,6 +24,10 @@ import upbfcApp from "../../img/application.jpg";
 import maitriseProject from "../../img/project6.jpg";
 import mockup3D from "../../img/mockup2.png";
 
+import logodore from "../../img/logo-2.png";
+import affichedore from "../../img/AFFICHEPICHE.png";
+import tote from "../../img/mockup_totebag.png";
+
 export interface Project {
   id: number;
   slug: string;
@@ -146,4 +150,19 @@ export const projects: Project[] = [
     image: sportPhotos[0],
     gallery: sportPhotos,
   },
+  {
+    id: 8,
+    slug: "centre-gustave-dore",
+    title: "Centre Gustave Doré",
+    category: "Identité Visuelle & Web",
+    year: "2026",
+    client: "Projet fictif",
+    role: "Direction artistique & Webdesign",
+    description:
+      "Identité de marque et conception web pour un musée fictif dédié à Gustave Doré.",
+    context:
+      "Le Centre Gustave Doré est un projet conceptuel imaginé pour rendre hommage à l'œuvre monumentale du célèbre illustrateur et graveur. L'enjeu était de concevoir une identité visuelle et une interface numérique capables de sublimer et moderniser l'approche de ses gravures, tout en conservant l'atmosphère dramatique et onirique qui fait sa signature.",
+    image: affichedore,
+    gallery: [logodore, affichedore, tote],
+  }
 ];

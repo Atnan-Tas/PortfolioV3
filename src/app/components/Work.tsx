@@ -35,17 +35,17 @@ export const Work = ({ onProjectSelect }: WorkProps) => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.6, delay: (i % 2) * 0.08, ease: [0.16, 1, 0.3, 1] }}
               onClick={() => onProjectSelect(project)}
-              className={`group text-left ${i === 0 ? "md:col-span-2" : ""}`}
+              className="group text-left"
               data-cursor-text="Voir"
             >
-              <div className="relative overflow-hidden rounded-sm bg-neutral-900 aspect-[4/3] mb-5">
+              <div className="relative overflow-hidden rounded-sm bg-neutral-900 aspect-[16/9] mb-5">
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
                   className={`w-full h-full object-cover transition-[transform,filter] duration-[1200ms] ease-out group-hover:scale-105 ${
-                    project.slug === "photographie-sportive"
+                    project.slug === "photographie-sportive" || project.slug === "centre-gustave-dore"
                       ? "grayscale"
                       : ""
                   }`}
